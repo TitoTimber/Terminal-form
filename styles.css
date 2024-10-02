@@ -7,17 +7,32 @@ body{
     align-items: center;
 }
 .container{
-    background-color: #a0c6d5;
+    background-color: #a0c6d590; /*adding transparency here for backdrop-filter: blur*/
     height: 400px;
     width: 800px;
     border-radius: 8px;
     overflow: hidden;
-    display: flex;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);    
+    /* for the backdrop filter to work, the element on which it's applied (in this case, .container) 
+    must have some transparency or semi-transparency, so that the background behind it can show through. */
 }
 .title-bar{
     background-color: #003366;
     position: relative;
-    height: 100px;
+    height: 50px;
     width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title-bar p{
+    color: white;
+    font-size: x-large;
+    font-family: 'Courier Prime', monospace;
+    font-weight: 550;
+}
+.container p{
+    color: white;
+    font-family: 'courier prime', monospace;
+    font-size: large;
 }
