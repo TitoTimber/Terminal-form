@@ -1,0 +1,23 @@
+body{
+    background-image: url(./images/bg-image.jpg);
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: #a0c6d5;
+    height: 400px;
+    width: 800px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    backdrop-filter: blur(10px);
+}
+.title-bar{
+    background-color: #003366;
+    position: relative;
+    height: 100px;
+    width: 800px;
+}
